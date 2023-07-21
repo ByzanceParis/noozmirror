@@ -15,7 +15,7 @@ class NoozMirror {
 
   /**
    * This function turn on/off the phone flashlight
-   * @param {{on : true | false}} - true to turn on, false to turn off
+   * @param {boolean} - true to turn on, false to turn off
    * @returns {boolean} success - true if the operation was successful, false otherwise
    * @example
    * await noozMirror.turnFlashlight(true);

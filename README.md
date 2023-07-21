@@ -40,6 +40,7 @@ This function turn on/off the phone flashlight
 ### Parameters
 
 *   `on` &#x20;
+*   `null-null` **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** true to turn on, false to turn off
 
 ### Examples
 
