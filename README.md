@@ -4,33 +4,39 @@
 
 *   [NoozMirror][1]
     *   [Parameters][2]
-    *   [toggleFlashlight][3]
-        *   [Parameters][4]
-        *   [Examples][5]
-    *   [takePicture][6]
-        *   [Parameters][7]
-        *   [Examples][8]
-*   [onRfid][9]
-    *   [Properties][10]
-    *   [Examples][11]
+    *   [Examples][3]
+    *   [toggleFlashlight][4]
+        *   [Parameters][5]
+        *   [Examples][6]
+    *   [takePicture][7]
+        *   [Parameters][8]
+        *   [Examples][9]
+*   [onRfid][10]
+    *   [Properties][11]
+    *   [Examples][12]
 
 ## NoozMirror
 
 Nooz Mirror Js script
 Script can be tested by loaded it in a browser :
-```html
-<script src="https://nooz.byzance.world/NoozMirror.js"></script>
-```
-You can use it with Typescript like this :
-declare global {
-interface Window { NoozMirror: any; }
-}
-const noozMirror = new NoozMirror();
-Testing RFID event can be done by pressing r key on the keyboard
 
 ### Parameters
 
-*   `conf` **[object][12]**  (optional, default `{}`)
+*   `conf` **[object][13]**  (optional, default `{}`)
+
+### Examples
+
+```javascript
+<script src="https://nooz.byzance.world/NoozMirror.js"></script>
+You can use it with Typescript like this :
+```
+
+```javascript
+declare global {
+ interface Window { NoozMirror: any; }
+}
+const noozMirror = new NoozMirror();
+```
 
 ### toggleFlashlight
 
@@ -38,7 +44,7 @@ This function turn on/off the phone flashlight
 
 #### Parameters
 
-*   `on` **[boolean][13]** true to turn on, false to turn off
+*   `on` **[boolean][14]** true to turn on, false to turn off
 
 #### Examples
 
@@ -46,7 +52,7 @@ This function turn on/off the phone flashlight
 await noozMirror.toggleFlashlight(true);
 ```
 
-Returns **[boolean][13]** success - true if the operation was successful, false otherwise
+Returns **[boolean][14]** success - true if the operation was successful, false otherwise
 
 ### takePicture
 
@@ -54,11 +60,11 @@ This async function take a picture with the phone camera
 
 #### Parameters
 
-*   `options` **[Object][12]**&#x20;
+*   `options` **[Object][13]**&#x20;
 
-    *   `options.quality` **[Boolean][13]** The quality of the image 0-1
-    *   `options.width` **[Boolean][13]** The maximum width of the image
-    *   `options.height` **[Boolean][13]** The maximum height of the image
+    *   `options.quality` **[Boolean][14]** The quality of the image 0-1
+    *   `options.width` **[Boolean][14]** The maximum width of the image
+    *   `options.height` **[Boolean][14]** The maximum height of the image
 
 #### Examples
 
@@ -72,12 +78,12 @@ Returns **base64** The base64 encoded string representation of the image (jpg fo
 
 This event is fired when a rfid tag is detected or removed
 
-Type: [Object][12]
+Type: [Object][13]
 
 ### Properties
 
-*   `id` **[string][14]** id of the tag
-*   `action` **[string][14]** action performed on the tag (inserted or removed)
+*   `id` **[string][15]** id of the tag
+*   `action` **[string][15]** action performed on the tag (inserted or removed)
 
 ### Examples
 
@@ -92,26 +98,28 @@ noozMirror.onRfid( (msg) => {
 
 [2]: #parameters
 
-[3]: #toggleflashlight
+[3]: #examples
 
-[4]: #parameters-1
+[4]: #toggleflashlight
 
-[5]: #examples
+[5]: #parameters-1
 
-[6]: #takepicture
+[6]: #examples-1
 
-[7]: #parameters-2
+[7]: #takepicture
 
-[8]: #examples-1
+[8]: #parameters-2
 
-[9]: #onrfid
+[9]: #examples-2
 
-[10]: #properties
+[10]: #onrfid
 
-[11]: #examples-2
+[11]: #properties
 
-[12]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[12]: #examples-3
 
-[13]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[13]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
 
-[14]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[14]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[15]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
