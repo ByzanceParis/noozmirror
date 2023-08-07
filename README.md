@@ -28,6 +28,7 @@ Script can be tested by loaded it in a browser :
 
 ```javascript
 <script src="https://nooz.byzance.world/NoozMirror.js"></script>
+
 You can use it with Typescript like this :
 ```
 
@@ -36,6 +37,8 @@ declare global {
  interface Window { NoozMirror: any; }
 }
 const noozMirror = new NoozMirror();
+
+Testing RFID event can be done by pressing r key on the keyboard
 ```
 
 ### toggleFlashlight
