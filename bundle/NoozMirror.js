@@ -56,6 +56,7 @@
 
     var NoozMirror = (function () {
         function NoozMirror(conf) {
+            if (conf === void 0) { conf = {}; }
             this._conf = conf;
         }
         NoozMirror.prototype.toggleFlashlight = function (on) {
