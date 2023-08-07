@@ -26,6 +26,7 @@ declare global {
 interface Window { NoozMirror: any; }
 }
 const noozMirror = new NoozMirror();
+Testing RFID event can be done by pressing r key on the keyboard
 
 ### Parameters
 
