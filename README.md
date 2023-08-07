@@ -18,9 +18,9 @@
 
 Nooz Mirror Js script
 Script can be tested by loaded it in a browser :
-
+```html
 <script src="https://nooz.byzance.world/NoozMirror.js"></script>
-
+```
 You can use it with Typescript like this :
 declare global {
 interface Window { NoozMirror: any; }
