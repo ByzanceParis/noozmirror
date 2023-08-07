@@ -4,12 +4,25 @@ declare global {
   interface Window { NoozMirror: any; }
 }
 
+/**
+ * Nooz Mirror Js script
+ *  Script can be tested by loaded it in a browser :
+ * <script src="https://nooz.byzance.world/NoozMirror.js"></script>
+ * You can use it with Typescript like this :
+ * declare global {
+ *  interface Window { NoozMirror: any; }
+ * }
+ * const noozMirror = new NoozMirror();
+ */
+
+
+
 class NoozMirror {
   private _conf: any;
   private _callback: Function;
   private _rfid: any;
   
-  constructor( conf:object ) {
+  constructor( conf:object = {}) {
       this._conf = conf;
   }
 
